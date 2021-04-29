@@ -1,0 +1,32 @@
+method A AND B
+
+
+
+
+class Solution {
+public:
+    int arrangeCoins(int n) 
+    {
+//         long long i=1;
+//         long long sum=0;
+//         long long count=0;
+        
+//         while(sum+i<=n)
+//         {
+            
+//             sum=sum+i;
+//             count++;
+//             i++;
+//         }
+//         return count;
+        
+        long long k=sqrt(2*(n));
+        
+        long long sum=(k+1)*k/2;
+        
+        if(sum>n)return k-1;
+        return k;
+        
+        
+    }
+};
